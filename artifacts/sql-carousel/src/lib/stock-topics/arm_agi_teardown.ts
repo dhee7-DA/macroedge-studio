@@ -1,0 +1,70 @@
+import type { SlideData } from "../carousel-types";
+
+export const ARM_AGI_TEARDOWN: SlideData[] = [
+  {
+    type: "hero",
+    background: "dark",
+    tag: "STOCK INTELLIGENCE",
+    tagRight: "SIGNAL: MAY 7, 2026",
+    heading: "The ARM",
+    headingAccent: "AGI Surge.",
+    body: "Inside the $1.49B earnings beat. As ARM reveals $2B in data-center demand for its new 'Arm AGI' architecture, the AI royalty moat is getting wider.",
+    levelBadge: "ADVANCED",
+    topicNum: "ARM1",
+    bullets: ["$1.49B Revenue Smash", "20% Y/Y Growth", "The $2B AGI Backlog"],
+  },
+  {
+    type: "concept",
+    background: "light",
+    tag: "THE ROYALTY MOAT",
+    heading: "The Toll-Booth",
+    headingAccent: "Model.",
+    body: "ARM doesn't make chips; they make the 'Rules' for chips. Every time a hyperscaler (Google/AWS) builds a custom AI chip, ARM gets a check.",
+    features: [
+      { icon: "💰", label: "v9 Architecture", description: "The shift to Armv9 has doubled the royalty rates compared to older designs." },
+      { icon: "🚀", label: "$2B Backlog", description: "Management revealed a massive $2B pipeline for 'Arm AGI' data-center designs through 2028." },
+      { icon: "🤖", label: "AI Inflection", description: "ARM is now the mandatory foundation for the 2026 'Custom Silicon' boom." },
+    ],
+    insightBox: "💡 Analysis: ARM is the 'Software of Hardware'. They have 100% margins on their intellectual property.",
+  },
+  {
+    type: "concept",
+    background: "dark",
+    tag: "THE DATA CENTER PIVOT",
+    heading: "Killing the",
+    headingAccent: "x86 Era.",
+    body: "The old Intel/AMD x86 server dominance is dying. ARM-based 'Neoverse' and 'AGI' chips are now 30% more power-efficient for AI inference.",
+    features: [
+      { icon: "⚡", label: "Power Efficiency", description: "In a world of energy shortages, ARM's 'Performance-per-Watt' is the ultimate selling point." },
+      { icon: "☁️", label: "Hyperscaler Wins", description: "Amazon (Graviton), Google (Axion), and Microsoft (Cobalt) are all ARM-based." },
+      { icon: "🏁", label: "The Shift", description: "ARM now powers 15% of the cloud, and is on track for 30% by 2027." },
+    ],
+  },
+  {
+    type: "table",
+    background: "light",
+    tag: "SECTOR COMPARISON",
+    heading: "ARM vs.",
+    headingAccent: "The Field.",
+    body: "How does the 'Royalty King' stack up against the hardware giants in the current AI cycle?",
+    table: {
+      headers: ["Asset", "Moat Type", "Margin", "2026 Verdict"],
+      rows: [
+        { cells: ["ARM", "IP Royalty", "95%+", "STRONG BUY"], highlight: true },
+        { cells: ["NVDA", "Software/GPU", "80%", "HOLD"] },
+        { cells: ["AMD", "Inference HW", "55%", "SPEC BUY"] },
+        { cells: ["INTC", "Legacy Mfg", "35%", "AVOID"] },
+      ],
+      caption: "Source: MacroEdge Sector Audit, May 7, 2026.",
+    },
+  },
+  {
+    type: "cta",
+    background: "dark",
+    tag: "MACROEDGE VERDICT",
+    heading: "Follow the",
+    headingAccent: "Blueprint.",
+    body: "In the gold rush, don't just buy the shovels—buy the patents for the shovel. ARM is the ultimate 'Shadow Monopoly' of the AI decade.",
+    ctaText: "Unlock the Full ARM Report",
+  },
+];

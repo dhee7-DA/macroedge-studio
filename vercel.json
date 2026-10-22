@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm --filter @workspace/sql-carousel run build",
+  "outputDirectory": "artifacts/sql-carousel/dist/public",
+  "installCommand": "pnpm install",
+  "framework": "vite"
+}

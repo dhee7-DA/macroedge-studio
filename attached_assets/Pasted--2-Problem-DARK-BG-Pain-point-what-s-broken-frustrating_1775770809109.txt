@@ -1,0 +1,73 @@
+| 2 | Problem | DARK_BG | Pain point — what's broken, frustrating, or outdated |
+| 3 | Solution | Brand gradient | The answer — what solves it, optional quote/prompt box |
+| 4 | Features | LIGHT_BG | What you get — feature list with icons |
+| 5 | Details | DARK_BG | Depth — customization, specs, differentiators |
+| 6 | How-to | LIGHT_BG | Steps — numbered workflow or process |
+| 7 | CTA | Brand gradient | Call to action — logo, tagline, CTA button. No arrow. Full progress bar. |
+
+Rules:
+- Start with a hook on LIGHT_BG
+- End with a CTA on brand gradient — no swipe arrow, progress bar at 100%
+- Alternate light and dark backgrounds
+- Adapt the sequence to the topic — not every carousel needs a "problem" slide
+
+---
+
+## Reusable Components
+
+### Strikethrough pills
+For "what's being replaced" messaging on problem slides.
+<span style="font-size:11px;padding:5px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:20px;color:#6B6560;text-decoration:line-through;">{Old tool}</span>
+### Tag pills
+For feature labels, options, or categories.
+<span style="font-size:11px;padding:5px 12px;background:rgba(255,255,255,0.06);border-radius:20px;color:{BRAND_LIGHT};">{Label}</span>
+### Prompt / quote box
+For showing example inputs, quotes, or testimonials.
+<div style="padding:16px;background:rgba(0,0,0,0.15);border-radius:12px;border:1px solid rgba(255,255,255,0.08);">
+  <p class="sans" style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:6px;">{Label}</p>
+  <p class="serif" style="font-size:15px;color:#fff;font-style:italic;line-height:1.4;">"{Quote text}"</p>
+</div>
+### Feature list
+Icon + label + description rows for feature/benefit slides.
+<div style="display:flex;align-items:flex-start;gap:14px;padding:10px 0;border-bottom:1px solid {LIGHT_BORDER};">
+  <span style="color:{BRAND_PRIMARY};font-size:15px;width:18px;text-align:center;">{icon}</span>
+  <div>
+    <span class="sans" style="font-size:14px;font-weight:600;color:{DARK_BG};">{Label}</span>
+    <span class="sans" style="font-size:12px;color:#8A8580;">{Description}</span>
+  </div>
+</div>
+### Numbered steps
+For workflow or how-to slides.
+<div style="display:flex;align-items:flex-start;gap:16px;padding:14px 0;border-bottom:1px solid {LIGHT_BORDER};">
+  <span class="serif" style="font-size:26px;font-weight:300;color:{BRAND_PRIMARY};min-width:34px;line-height:1;">01</span>
+  <div>
+    <span class="sans" style="font-size:14px;font-weight:600;color:{DARK_BG};">{Step title}</span>
+    <span class="sans" style="font-size:12px;color:#8A8580;">{Step description}</span>
+  </div>
+</div>
+### Color swatches
+For customization or branding slides.
+<div style="width:32px;height:32px;border-radius:8px;background:{color};border:1px solid rgba(255,255,255,0.08);"></div>
+### CTA button (final slide only)
+<div style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:{LIGHT_BG};color:{BRAND_DARK};font-family:'{BODY_FONT}',sans-serif;font-weight:600;font-size:14px;border-radius:28px;">
+  {CTA text}
+</div>
+---
+
+## Instagram Frame (Preview Wrapper)
+
+When displaying the carousel in chat, wrap it in an Instagram-style frame so the user can preview the experience:
+
+- Header: Avatar (BRAND_PRIMARY circle + logo) + handle + subtitle
+- Viewport: 4:5 aspect ratio, swipeable/draggable track with all slides
+- Dots: Small dot indicators below the viewport
+- Actions: Heart, comment, share, bookmark SVG icons
+- Caption: Handle + short carousel description + "2 HOURS AGO" timestamp
+
+Include pointer-based swipe/drag interaction for the preview, but the slides themselves are standalone export-ready images.
+
+---
+
+## Design Principles
+
+1. Every slide is export-ready — arrow and progress bar are part of the slide image, not overlay UI

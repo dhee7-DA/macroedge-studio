@@ -34,6 +34,16 @@ export interface SubstackResearchArticle {
 
 export const WSJ_PRESETS: ArticleInput[] = [
   {
+    headline: "Why Elon Musk Wants to Merge Tesla and SpaceX: The $3.7T Corporate Singularity",
+    angle: "ma-private-equity",
+    tickers: "TSLA, SPACEX, NVDA",
+    author: "MacroEdge Research Desk",
+    date: "October 22, 2026",
+    rawText: `Elon Musk has confirmed that special independent board committees are studying a historic merger between Tesla Inc. and SpaceX, creating a consolidated entity valued between $3.5T and $3.7T. While retail investors focus on the novelty of cars and rockets under one ticker, institutional credit desks and M&A analysts are parsing the balance sheet arbitrage: Tesla's mature automotive cash generation ($32B liquid treasury) funding SpaceX's aggressive Starship, AI compute, and defense constellation CapEx.
+
+Crucially, the deal seeks to break Nvidia's 75% gross margin grip by uniting Tesla and SpaceX's custom silicon R&D into a single ASIC pipeline, while enabling Musk to restore over 80% super-voting control over his combined corporate empire. However, the transaction faces unprecedented scrutiny under Delaware Chancery Court Entire Fairness review (Tornetta v. Musk) and a geopolitical friction point between the Pentagon's classified Starshield programs and Tesla's Shanghai manufacturing hub.`,
+  },
+  {
     headline: "Tech Giants Sign Historic Power Pacts as Grid Constraints Threaten $250B AI Expansion",
     angle: "capex-plumbing",
     tickers: "MSFT, CEG, VST, AMZN, NVDA",
@@ -130,6 +140,24 @@ export function synthesizeSubstackArticle(input: ArticleInput): SubstackResearch
       { label: "2025", value: 780 },
       { label: "2026E", value: 1140, highlighted: true },
       { label: "2027P", value: 1520, highlighted: true },
+    ];
+  } else if (input.angle === "ma-private-equity") {
+    thesisHook = "Mainstream financial commentary treats this mega-merger as visionary founder theater. But institutional M&A and credit desks recognize the underlying mechanics: capital structure arbitrage, custom silicon consolidation to escape Nvidia's 75% margin tax, and super-voting governance realignments.";
+    plumbingMechanic = "When a mature manufacturing titan with a multi-billion-dollar liquid cash treasury merges with an insatiable, high-CapEx infrastructure utility, the transaction functions as an internal capital market. It eliminates expensive outside equity dilution and debt issuance, while unifying custom silicon tape-outs across satellite telemetry and autonomous robotics.";
+    balanceSheetData = `| Corporate Entity | Market Valuation | Liquid Cash Treasury | Annual CapEx Demand | Voting Power (Controlling Stake) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tesla Inc. ($TSLA)** | ~$1.20 Trillion | $32.5 Billion | $10.5 Billion | ~20.5% (Vulnerable to Delaware) |
+| **SpaceX (Private / Post-IPO)** | ~$2.30 - $2.50 Trillion | $9.8 Billion | $22.0 Billion+ (Starship) | >80.0% (Super-Voting Control) |
+| **Pro-Forma Combined Entity** | **$3.50 - $3.70 Trillion** | **$42.3 Billion** | **$32.5 Billion+** | **Consolidated Super-Voting Control** |`;
+    winnersWatchlist = "**1. Autonomous Robotics & Aerospace Engineering Teams**: Frictionless cross-pollination of neural net weights and manufacturing metallurgy.\n**2. TSMC / Direct GAA Foundry Partners**: Direct multi-billion wafer procurement contracts bypassing fabless designer markups.";
+    losersWatchlist = "**1. Nvidia ($NVDA) Long-Term Pricing Monopoly**: Loses dual-entity leverage as internal ASIC pipeline scales.\n**2. Delaware Chancery Court Shareholder Litigants**: Outmaneuvered by super-voting holding company structures.";
+    chartMetric = "Combined Pro-Forma R&D & CapEx Investment ($B)";
+    chartTrajectory = [
+      { label: "2023", value: 18 },
+      { label: "2024", value: 29 },
+      { label: "2025", value: 46 },
+      { label: "2026E", value: 68, highlighted: true },
+      { label: "2027P", value: 94, highlighted: true },
     ];
   } else {
     thesisHook = "Mainstream reporting treats today's headline as an isolated earnings or headline development. Institutional capital allocation, by contrast, views this as the beginning of a multi-quarter capital rotation where balance sheet durability supersedes speculative narrative.";
